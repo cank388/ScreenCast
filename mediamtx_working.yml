@@ -1,0 +1,11 @@
+logLevel: info
+
+rtmp: yes
+rtmpAddress: :1935
+
+hls: yes
+hlsAddress: :8080
+
+paths:
+  live:
+    source: publisher

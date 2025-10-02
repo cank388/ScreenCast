@@ -6,13 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8B9FA5E52E8DBDCD00323B71 /* HaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B9FA5E42E8DBDCD00323B71 /* HaishinKit */; };
+		8B9FA5E72E8DBDCD00323B71 /* RTCHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B9FA5E62E8DBDCD00323B71 /* RTCHaishinKit */; };
+		8B9FA5E92E8DBDCD00323B71 /* RTMPHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B9FA5E82E8DBDCD00323B71 /* RTMPHaishinKit */; };
+		9CEA06019E7D4B15E9ED3FBF /* Pods_ScreenCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CC70285E0475D8D7F4FC86 /* Pods_ScreenCast.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		7E29F831CE1F9D936A13DA46 /* Pods-ScreenCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenCast.debug.xcconfig"; path = "Target Support Files/Pods-ScreenCast/Pods-ScreenCast.debug.xcconfig"; sourceTree = "<group>"; };
 		8B9FA2252E8D367200323B71 /* ScreenCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1CC70285E0475D8D7F4FC86 /* Pods_ScreenCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C228F0712831EEA7A5323CE0 /* Pods-ScreenCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenCast.release.xcconfig"; path = "Target Support Files/Pods-ScreenCast/Pods-ScreenCast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8B9FA2332E8D367300323B71 /* Exceptions for "ScreenCast" folder in "ScreenCast" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8B9FA2242E8D367200323B71 /* ScreenCast */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8B9FA2272E8D367200323B71 /* ScreenCast */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8B9FA2332E8D367300323B71 /* Exceptions for "ScreenCast" folder in "ScreenCast" target */,
+			);
 			path = ScreenCast;
 			sourceTree = "<group>";
 		};
@@ -23,17 +46,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9FA5E52E8DBDCD00323B71 /* HaishinKit in Frameworks */,
+				8B9FA5E92E8DBDCD00323B71 /* RTMPHaishinKit in Frameworks */,
+				8B9FA5E72E8DBDCD00323B71 /* RTCHaishinKit in Frameworks */,
+				9CEA06019E7D4B15E9ED3FBF /* Pods_ScreenCast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25AA7868C6B37AC3AD5A5DFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC70285E0475D8D7F4FC86 /* Pods_ScreenCast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B9FA21C2E8D367200323B71 = {
 			isa = PBXGroup;
 			children = (
 				8B9FA2272E8D367200323B71 /* ScreenCast */,
 				8B9FA2262E8D367200323B71 /* Products */,
+				A7CA461D81E1386708313AB7 /* Pods */,
+				25AA7868C6B37AC3AD5A5DFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +82,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A7CA461D81E1386708313AB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E29F831CE1F9D936A13DA46 /* Pods-ScreenCast.debug.xcconfig */,
+				C228F0712831EEA7A5323CE0 /* Pods-ScreenCast.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B9FA2302E8D367300323B71 /* Build configuration list for PBXNativeTarget "ScreenCast" */;
 			buildPhases = (
+				43DC3B5D26B97A297E5B1A8E /* [CP] Check Pods Manifest.lock */,
 				8B9FA2212E8D367200323B71 /* Sources */,
 				8B9FA2222E8D367200323B71 /* Frameworks */,
 				8B9FA2232E8D367200323B71 /* Resources */,
+				0D028370F8EDF70BFEC7D2BA /* [CP] Embed Pods Frameworks */,
+				97EF572E444B5BECC4FC9E12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -64,8 +113,6 @@
 				8B9FA2272E8D367200323B71 /* ScreenCast */,
 			);
 			name = ScreenCast;
-			packageProductDependencies = (
-			);
 			productName = ScreenCast;
 			productReference = 8B9FA2252E8D367200323B71 /* ScreenCast.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +141,9 @@
 			);
 			mainGroup = 8B9FA21C2E8D367200323B71;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8B9FA5E32E8DBDCD00323B71 /* XCRemoteSwiftPackageReference "HaishinKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8B9FA2262E8D367200323B71 /* Products */;
 			projectDirPath = "";
@@ -113,6 +163,73 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D028370F8EDF70BFEC7D2BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenCast/Pods-ScreenCast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenCast/Pods-ScreenCast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenCast/Pods-ScreenCast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43DC3B5D26B97A297E5B1A8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenCast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97EF572E444B5BECC4FC9E12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenCast/Pods-ScreenCast-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenCast/Pods-ScreenCast-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenCast/Pods-ScreenCast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B9FA2212E8D367200323B71 /* Sources */ = {
@@ -163,7 +280,7 @@
 				DEVELOPMENT_TEAM = HVD9VLR59U;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -227,7 +344,7 @@
 				DEVELOPMENT_TEAM = HVD9VLR59U;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -248,14 +365,16 @@
 		};
 		8B9FA2312E8D367300323B71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E29F831CE1F9D936A13DA46 /* Pods-ScreenCast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenCast/ScreenCast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HVD9VLR59U;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenCast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -276,14 +395,16 @@
 		};
 		8B9FA2322E8D367300323B71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C228F0712831EEA7A5323CE0 /* Pods-ScreenCast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenCast/ScreenCast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HVD9VLR59U;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenCast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +445,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B9FA5E32E8DBDCD00323B71 /* XCRemoteSwiftPackageReference "HaishinKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shogo4405/HaishinKit.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B9FA5E42E8DBDCD00323B71 /* HaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B9FA5E32E8DBDCD00323B71 /* XCRemoteSwiftPackageReference "HaishinKit" */;
+			productName = HaishinKit;
+		};
+		8B9FA5E62E8DBDCD00323B71 /* RTCHaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B9FA5E32E8DBDCD00323B71 /* XCRemoteSwiftPackageReference "HaishinKit" */;
+			productName = RTCHaishinKit;
+		};
+		8B9FA5E82E8DBDCD00323B71 /* RTMPHaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B9FA5E32E8DBDCD00323B71 /* XCRemoteSwiftPackageReference "HaishinKit" */;
+			productName = RTMPHaishinKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B9FA21D2E8D367200323B71 /* Project object */;
 }

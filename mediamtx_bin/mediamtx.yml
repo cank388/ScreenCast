@@ -1,0 +1,14 @@
+rtmp:
+  enabled: yes
+  address: :1935
+
+hls:
+  enabled: yes
+  address: :8080
+
+paths:
+  live:
+    source: publisher
+    hlsSegmentCount: 6
+    hlsSegmentDuration: 1s
+    hlsPartDuration: 200ms
